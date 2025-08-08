@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+    html, body {
+        @apply touch-manipulation;
+    }
+
+    body {
+        @apply text-gray-800;
+        font-family: Inter, sans-serif;
+    }
+
+    button {
+        @apply flex ;
+    }
+
+}
