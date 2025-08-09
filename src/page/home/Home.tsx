@@ -10,6 +10,7 @@ function Home() {
           <LocationIcon />내 위치
         </div>
       </div>
+      테스트용
       <Search />
     </>
   );
