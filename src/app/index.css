@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@layer utilities {
+    .shadow-bottom {
+        box-shadow: 0 -4px 20px 0 #0000000D;
+    }
+}
+
 @layer base {
     html, body {
         @apply touch-manipulation;
