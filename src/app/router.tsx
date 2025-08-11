@@ -22,7 +22,8 @@ const Notification = lazy(() => import('../page/Notification/Notification.tsx'))
 const OrderHistory = lazy(() => import('../page/OrderHistory/OrderHistory.tsx'));
 const Payment = lazy(() => import('../page/Payment/Payment.tsx'));
 const PickupMap = lazy(() => import('../page/PickupMap/PickupMap.tsx'));
-const StoreDetail = lazy(() => import('../page/StoreDetail/StoreDetail.tsx'));
+const StoreDetail = lazy(() => import('@/page/Store/StoreDetail/StoreDetail.tsx'));
+const StoreMenuDetail = lazy(() => import('@/page/Store/StoreMenuDetail/StoreMenuDetail.tsx'));
 const Cart = lazy(() => import('../page/Cart/Cart.tsx'));
 
 const withSuspense = (Component: ReactElement) => (
@@ -56,11 +57,18 @@ export const router = createBrowserRouter([
         ],
       },
 
+      {
+        path: ROUTE_PATHS.STORE,
+        children: [
+          { path: ROUTE_PATHS.STORE_DETAIL, element: withSuspense(<StoreDetail />) },
+          { path: ROUTE_PATHS.STORE_MENU_DETAIL, element: withSuspense(<StoreMenuDetail />) },
+        ],
+      },
+
       { path: ROUTE_PATHS.NOTIFICATION, element: withSuspense(<Notification />) },
       { path: ROUTE_PATHS.ORDER_HISTORY, element: withSuspense(<OrderHistory />) },
       { path: ROUTE_PATHS.PAYMENT, element: withSuspense(<Payment />) },
       { path: ROUTE_PATHS.PICKUP, element: withSuspense(<PickupMap />) },
-      { path: ROUTE_PATHS.STORE_DETAIL, element: withSuspense(<StoreDetail />) },
       { path: ROUTE_PATHS.CART, element: withSuspense(<Cart />) },
     ],
   },
