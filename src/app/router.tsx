@@ -22,7 +22,7 @@ const Notification = lazy(() => import('../page/Notification/Notification.tsx'))
 const OrderHistory = lazy(() => import('../page/OrderHistory/OrderHistory.tsx'));
 const Payment = lazy(() => import('../page/Payment/Payment.tsx'));
 const PickupMap = lazy(() => import('../page/PickupMap/PickupMap.tsx'));
-const StoreDetail = lazy(() => import('../page/StoreDetail/StoreDetail.tsx'));
+const StoreDetail = lazy(() => import('../page/StoreDetail/StoreDetail.jsx'));
 const Cart = lazy(() => import('../page/Cart/Cart.tsx'));
 
 const withSuspense = (Component: ReactElement) => (
