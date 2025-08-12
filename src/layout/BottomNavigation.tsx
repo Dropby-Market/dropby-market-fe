@@ -15,7 +15,7 @@ const navItems = [
 
 function BottomNavigation() {
   return (
-    <nav className="shadow-bottom fixed bottom-0 z-10 flex w-full max-w-[500px] items-center bg-white pb-8">
+    <nav className="shadow-bottom fixed bottom-0 z-10 flex w-full max-w-md items-center bg-white pb-8">
       {navItems.map(({ to, label, icon }) => (
         <NavLink
           key={to}
