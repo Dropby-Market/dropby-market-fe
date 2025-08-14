@@ -1,5 +1,6 @@
 import { createContext, type MouseEvent, type ReactNode, useContext, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { Slot } from '@radix-ui/react-slot';
 
 interface BottomSheetContextProps {
   open: boolean;
@@ -40,16 +41,24 @@ function BottomSheetContent({ children }: { children: ReactNode }) {
       onClick={handleBackgroundClick}
     >
       <div className="h-9/10 absolute bottom-0 w-full rounded-t-xl bg-white px-4 py-8">
-        {children}
+        <div className="h-full overflow-y-auto">{children}</div>
       </div>
     </div>,
     document.getElementById('bottomSheet-root') as HTMLElement
   );
 }
 
-function BottomSheetTrigger({ children }: { children: ReactNode }) {
+function BottomSheetTrigger({
+  children,
+  asChild = false,
+}: {
+  children: ReactNode;
+  asChild?: boolean;
+}) {
   const { setOpen } = useBottomSheet();
-  return <button onClick={() => setOpen(true)}>{children}</button>;
+  const Comp = asChild ? Slot : 'button';
+
+  return <Comp onClick={() => setOpen(true)}>{children}</Comp>;
 }
 
 function BottomSheetHeader({ children }: { children: ReactNode }) {
