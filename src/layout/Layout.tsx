@@ -1,8 +1,8 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import BottomNavigation from '@/layout/BottomNavigation.tsx';
 import Header from '@/layout/Header/Header.tsx';
 import { ROUTE_PATHS } from '@/shared/constant/routes.ts';
 import { cn } from '@/shared/lib/utils.ts';
+import BottomNavigation from '@/layout/Bottom/BottomNavigation.tsx';
 
 const visiblePathSet = new Set<string>([
   ROUTE_PATHS.ROOT,
