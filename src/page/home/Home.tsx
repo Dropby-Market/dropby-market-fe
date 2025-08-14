@@ -1,7 +1,7 @@
 import Search from '@/shared/ui/Search.tsx';
 import FilterGroup from '@/shared/ui/FilterGroup.tsx';
 import StoreItem from '@/page/home/components/StoreItem.tsx';
-import LocationIcon from '@/assets/home/LocationIcon.svg?react';
+import LocationIcon from '@/assets/ui/LocationIcon.svg?react';
 
 function Home() {
   return (

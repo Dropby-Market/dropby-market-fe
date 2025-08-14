@@ -4,7 +4,7 @@ import StarIcon from '@/assets/ui/StarIcon.svg?react';
 import BookmarkIcon from '@/assets/ui/BookmarkIcon.svg?react';
 
 // api 명세 확인 후 props 설정
-export default function StoreItem() {
+export default function MarketStoreItem() {
   return (
     <li className="flex">
       <div className="h-[100px] w-[100px] shrink-0">

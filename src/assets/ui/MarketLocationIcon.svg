@@ -1,0 +1,17 @@
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3320_10444)">
+<rect width="14" height="14" transform="translate(0 0.0015564)" fill="#E5E7EB"/>
+<rect opacity="0.6" x="1.75" y="1.75145" width="10.4993" height="10.4993" rx="1.16659" stroke="#A5A5A5" stroke-width="0.0233318"/>
+<rect opacity="0.6" x="1.1666" y="1.16815" width="11.6659" height="11.6659" rx="5.83295" stroke="#A5A5A5" stroke-width="0.0233318"/>
+<rect opacity="0.6" x="4.08319" y="4.08464" width="5.83295" height="5.83295" rx="2.91648" stroke="#A5A5A5" stroke-width="0.0233318"/>
+<rect opacity="0.6" x="1.1666" y="2.33475" width="11.6659" height="9.33273" rx="1.16659" stroke="#A5A5A5" stroke-width="0.0233318"/>
+<rect opacity="0.6" x="2.33319" y="12.8341" width="11.6659" height="9.33273" rx="1.16659" transform="rotate(-90 2.33319 12.8341)" stroke="#A5A5A5" stroke-width="0.0233318"/>
+<path opacity="0.6" d="M13.9991 0.0015564L0 14.0006" stroke="#A5A5A5" stroke-width="0.0233318"/>
+<path opacity="0.6" d="M5.57899e-05 0.0015564L13.9991 14.0006" stroke="#A5A5A5" stroke-width="0.0233318"/>
+</g>
+<defs>
+<clipPath id="clip0_3320_10444">
+<rect width="14" height="14" fill="white" transform="translate(0 0.0015564)"/>
+</clipPath>
+</defs>
+</svg>
