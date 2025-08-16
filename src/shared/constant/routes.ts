@@ -2,7 +2,7 @@ export const ROUTE_PATHS = {
   ROOT: '/',
 
   MARKET: 'market',
-  MARKET_DETAIL: ':marketId',
+  // MARKET_DETAIL: ':marketId',
 
   MERCHANT: 'merchant',
   MERCHANT_DETAIL: ':merchantId',
