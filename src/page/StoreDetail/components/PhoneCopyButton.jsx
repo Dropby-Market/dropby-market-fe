@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const NumCopyButton = () => {
+const PhoneCopyButton = () => {
 
     return (
         <div>
@@ -11,4 +11,4 @@ const NumCopyButton = () => {
     );
 };
 
-export default NumCopyButton;
+export default PhoneCopyButton;
