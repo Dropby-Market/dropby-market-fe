@@ -142,7 +142,7 @@ const StoreDetail = () => {
               <td className="text-[#374151] text-xs leading-4 font-medium">전화번호</td>
               <td className="flex items-center gap-1 text-[#374151] text-xs leading-4 font-medium">
                 {store.phone}
-                <PhoneCopyButton />
+                <PhoneCopyButton phone={store.phone} />
               </td>
             </tr>
           </tbody>
@@ -153,7 +153,7 @@ const StoreDetail = () => {
             지도
           </div>
           <div className="flex w-full divide-x-2 divide-[#E5E7EB]">
-            <MapCopyBtn/>
+            <MapCopyBtn address={store.address}/>
             <MapDetailBtn />
           </div>
         </div>

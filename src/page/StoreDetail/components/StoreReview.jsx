@@ -1,10 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 import Star from "@/assets/storeDetail/StarIcon.svg?react";
 
 const StoreReview = ({ name, profile, star, image, date, description }) => {
-    const navigate = useNavigate();
     const stars = Array.from({length: star})
 
     return (
