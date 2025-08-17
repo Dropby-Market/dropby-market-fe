@@ -37,7 +37,7 @@ const StoreDetail = () => {
   }
 
   // 상품 리스트
-  const storeGoods = [
+  const storeItem = [
       {id: 1, name: "못난이 포도 1봉지",price: 15000, image: Example},
       {id: 2, name: "못난이 참외 1봉지",price: 18000, image: ""}
     ]
@@ -182,7 +182,7 @@ const StoreDetail = () => {
       <main>
         {/* 메뉴탭 */}
         {activeTab === "메뉴" && <>
-        {storeGoods.map((item)=>(
+        {storeItem.map((item)=>(
           <StoreItem key={item.id}
           name={item.name}
           price={item.price}
