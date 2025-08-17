@@ -11,7 +11,7 @@ const SaveButton = () => {
     return(
         <button onClick = {handleSaveClick} className="cursor-pointer">
             {isSaved ? (
-                <SavedIcon ClassName= "w-6 h-6" />
+                <SavedIcon className= "w-6 h-6" />
             ) : (
                 <UnSavedIcon className="w-6 h-6" />
             )}

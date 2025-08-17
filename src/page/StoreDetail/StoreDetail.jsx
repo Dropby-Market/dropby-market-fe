@@ -14,7 +14,7 @@ import SaveButton from "./components/SaveButton";
 import PhoneCopyButton from "./components/PhoneCopyButton";
 import MapCopyBtn from "./components/MapCopyBtn";
 import MapDetailBtn from "./components/MapDetailBtn";
-import GoodsList from './components/GoodsList';
+import StoreItem from './components/StoreItem';
 import StoreReview from './components/StoreReview';
 
 const StoreDetail = () => {
@@ -122,6 +122,7 @@ const StoreDetail = () => {
             <col className="w-[74%]" />
           </colgroup>
 
+          <tbody>
             <tr className="items-center">
               <td><TimeIcon /></td>
               <td className="text-[#374151] text-xs leading-4 font-medium">소요시간</td>
@@ -144,6 +145,7 @@ const StoreDetail = () => {
                 <PhoneCopyButton />
               </td>
             </tr>
+          </tbody>
         </table>
 
         <div className="mt-3.5 border-2 border-[#E5E7EB] rounded-md overflow-hidden">
@@ -181,7 +183,7 @@ const StoreDetail = () => {
         {/* 메뉴탭 */}
         {activeTab === "메뉴" && <>
         {storeGoods.map((item)=>(
-          <GoodsList key={item.id}
+          <StoreItem key={item.id}
           name={item.name}
           price={item.price}
           image={item.image}/>
@@ -261,25 +263,27 @@ const StoreDetail = () => {
                 <col/>
               </colgroup>
 
-              <tr>
-                <td className="text-[#1F2937] text-xs leading-4 font-medium">대표명</td>
-                <td className="text-[#1F2937] text-xs leading-4 font-medium">{storeInfo.entre}</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td className="text-[#1F2937] text-xs leading-4 font-medium">대표명</td>
+                  <td className="text-[#1F2937] text-xs leading-4 font-medium">{storeInfo.entre}</td>
+                </tr>
 
-              <tr>
-                <td className="py-3.5 text-[#1F2937] text-xs leading-4 font-medium">상호명</td>
-                <td className="py-3.5 text-[#1F2937] text-xs leading-4 font-medium">{store.name}</td>
-              </tr>
+                <tr>
+                  <td className="py-3.5 text-[#1F2937] text-xs leading-4 font-medium">상호명</td>
+                  <td className="py-3.5 text-[#1F2937] text-xs leading-4 font-medium">{store.name}</td>
+                </tr>
 
-              <tr>
-                <td className="pb-3.5 text-[#1F2937] text-xs leading-4 font-medium">사업자주소</td>
-                <td className="pb-3.5 text-[#1F2937] text-xs leading-4 font-medium">{store.address}</td>
-              </tr>
+                <tr>
+                  <td className="pb-3.5 text-[#1F2937] text-xs leading-4 font-medium">사업자주소</td>
+                  <td className="pb-3.5 text-[#1F2937] text-xs leading-4 font-medium">{store.address}</td>
+                </tr>
 
-              <tr>
-                <td className="text-[#1F2937] text-xs leading-4 font-medium">사업자번호</td>
-                <td className="text-[#1F2937] text-xs leading-4 font-medium">{storeInfo.num}</td>
-              </tr>
+                <tr>
+                  <td className="text-[#1F2937] text-xs leading-4 font-medium">사업자번호</td>
+                  <td className="text-[#1F2937] text-xs leading-4 font-medium">{storeInfo.num}</td>
+                </tr>
+              </tbody>
             </table>
 
             <div className="my-3.5 border border-[#F3F4F6] w-full h-[1.5px]" />

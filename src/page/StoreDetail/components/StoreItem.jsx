@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const GoodsList = ({ name, price, image }) => {
+const StoreItem = ({ name, price, image }) => {
     const navigate = useNavigate();
 
     return (
@@ -21,4 +21,4 @@ const GoodsList = ({ name, price, image }) => {
     )
 }
 
-export default GoodsList;
+export default StoreItem;

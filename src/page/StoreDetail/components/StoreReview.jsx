@@ -6,7 +6,6 @@ import Star from "@/assets/storeDetail/StarIcon.svg?react";
 const StoreReview = ({ name, profile, star, image, date, description }) => {
     const navigate = useNavigate();
     const stars = Array.from({length: star})
-    const images = Array.isArray(image) ? image : image ? [image] : [];
 
     return (
         <article>
@@ -30,7 +29,7 @@ const StoreReview = ({ name, profile, star, image, date, description }) => {
                 </div>
             </div>
 
-            {image && image.length > 0 && (
+            {Array.isArray(image) && image.length > 0 && (
                 <div className="flex gap-2.5 overflow-x-auto mt-4 hide-scrollbar">
                     {image.map((img, idx) => (
                         <img
