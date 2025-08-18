@@ -2,7 +2,7 @@ export const ROUTE_PATHS = {
   ROOT: '/',
 
   MARKET: 'market',
-  MARKET_DETAIL: ':marketId',
+  // MARKET_DETAIL: ':marketId',
 
   MERCHANT: 'merchant',
   MERCHANT_DETAIL: ':merchantId',
@@ -11,11 +11,14 @@ export const ROUTE_PATHS = {
   MERCHANT_PRODUCT_EDIT: 'products/edit',
   MERCHANT_PRODUCT_EDIT_WITH_ID: 'products/edit/:productId?',
 
+  STORE: 'store',
+  STORE_DETAIL: ':storeId',
+  STORE_MENU_DETAIL: ':storeId/:menuId',
+
   NOTIFICATION: 'notification',
   ORDER_HISTORY: 'order-history',
   PAYMENT: 'payment',
   PICKUP: 'pickup',
-  STORE_DETAIL: 'store/:storeId',
   CART: 'cart',
 } as const;
 
@@ -27,4 +30,5 @@ export const buildPath = {
   merchantProductEdit: (productId?: string) =>
     productId ? `merchant/products/edit/${productId}` : `merchant/products/edit`,
   storeDetail: (storeId: string) => `store/${storeId}`,
+  storeMenuDetail: (storeId: string, menuId: string) => `store/${storeId}/${menuId}`,
 } as const;
