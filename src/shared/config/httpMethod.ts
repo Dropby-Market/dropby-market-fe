@@ -12,7 +12,7 @@ export function createConfig<Body extends object>(body?: Body): AxiosRequestConf
 }
 
 export const axiosInstance = axios.create({
-  // baseURL: import.meta.env.VITE_API_BASE_URL,
+  baseURL: import.meta.env.VITE_API_BASE_URL,
 });
 
 export async function httpMethod<Data>(
