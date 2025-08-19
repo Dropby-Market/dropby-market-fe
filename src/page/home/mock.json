@@ -1,0 +1,112 @@
+[
+  {
+    "storeId": 1,
+    "name": "매콤떡볶이",
+    "category": "분식",
+    "rating": 5,
+    "openingHours": "10:00 - 22:00",
+    "imageUrl": "http://example.com/분식_1.jpg",
+    "lat": 37.56651,
+    "lng": 126.97834,
+    "description": "정통 매콤떡볶이를 맛볼 수 있는 가게로, 학생들에게 인기 만점입니다."
+  },
+  {
+    "storeId": 2,
+    "name": "김밥천국",
+    "category": "분식",
+    "rating": 4,
+    "openingHours": "09:00 - 21:00",
+    "imageUrl": "http://example.com/분식_2.jpg",
+    "lat": 37.56682,
+    "lng": 126.97876,
+    "description": "다양한 종류의 김밥과 튀김을 즐길 수 있는 가족 친화적인 분식집입니다."
+  },
+  {
+    "storeId": 3,
+    "name": "분식마을",
+    "category": "분식",
+    "rating": 3,
+    "openingHours": "11:00 - 20:00",
+    "imageUrl": "http://example.com/분식_3.jpg",
+    "lat": 37.56693,
+    "lng": 126.97812,
+    "description": "오랜 전통을 자랑하는 분식집으로, 소문난 떡볶이 맛집입니다."
+  },
+  {
+    "storeId": 4,
+    "name": "튀김천국",
+    "category": "분식",
+    "rating": 4,
+    "openingHours": "10:00 - 22:00",
+    "imageUrl": "http://example.com/분식_4.jpg",
+    "lat": 37.56674,
+    "lng": 126.97845,
+    "description": "바삭하고 맛있는 튀김을 전문으로 하는 분식집입니다."
+  },
+  {
+    "storeId": 5,
+    "name": "분식나라",
+    "category": "분식",
+    "rating": 5,
+    "openingHours": "10:30 - 21:30",
+    "imageUrl": "http://example.com/분식_5.jpg",
+    "lat": 37.56688,
+    "lng": 126.97863,
+    "description": "학생들의 출출한 시간을 책임지는 인기 분식점입니다."
+  },
+  {
+    "storeId": 6,
+    "name": "빵굽는 아침",
+    "category": "빵",
+    "rating": 5,
+    "openingHours": "08:00 - 19:00",
+    "imageUrl": "http://example.com/빵_1.jpg",
+    "lat": 37.56701,
+    "lng": 126.97856,
+    "description": "갓 구운 빵과 크루아상을 판매하며 아침마다 신선한 냄새로 가득합니다."
+  },
+  {
+    "storeId": 7,
+    "name": "달콤한 빵집",
+    "category": "빵",
+    "rating": 4,
+    "openingHours": "07:00 - 20:00",
+    "imageUrl": "http://example.com/빵_2.jpg",
+    "lat": 37.56678,
+    "lng": 126.97889,
+    "description": "케이크와 디저트빵이 유명하며, 달콤한 간식을 좋아하는 사람들에게 인기입니다."
+  },
+  {
+    "storeId": 8,
+    "name": "빵향기",
+    "category": "빵",
+    "rating": 5,
+    "openingHours": "08:30 - 19:30",
+    "imageUrl": "http://example.com/빵_3.jpg",
+    "lat": 37.56665,
+    "lng": 126.97842,
+    "description": "부드러운 빵과 풍미 가득한 크림빵을 제공합니다."
+  },
+  {
+    "storeId": 9,
+    "name": "베이커리 행복",
+    "category": "빵",
+    "rating": 4,
+    "openingHours": "08:00 - 21:00",
+    "imageUrl": "http://example.com/빵_4.jpg",
+    "lat": 37.56690,
+    "lng": 126.97870,
+    "description": "가성비 좋은 빵과 다양한 디저트를 만나볼 수 있는 베이커리입니다."
+  },
+  {
+    "storeId": 10,
+    "name": "고소한 빵집",
+    "category": "빵",
+    "rating": 3,
+    "openingHours": "09:00 - 20:00",
+    "imageUrl": "http://example.com/빵_5.jpg",
+    "lat": 37.56677,
+    "lng": 126.97855,
+    "description": "고소한 냄새가 나는 빵집으로, 아침 출근길 사람들에게 인기입니다."
+  }
+]

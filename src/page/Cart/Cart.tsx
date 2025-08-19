@@ -4,9 +4,29 @@ import BottomButton from '@/layout/Bottom/BottomButton.tsx';
 import Button from '@/shared/ui/Button.tsx';
 import { useNavigate } from 'react-router-dom';
 import { ROUTE_PATHS } from '@/shared/constant/routes.ts';
+import { useEffect, useState } from 'react';
+import { httpMethod } from '@/shared/config/httpMethod.ts';
+import { END_POINT } from '@/shared/constant/apis.ts';
+import type { Cart } from '@/page/Cart/types.ts';
 
 export default function Cart() {
   const navigate = useNavigate();
+
+  const [carts, setCarts] = useState([]);
+
+  useEffect(() => {
+    const fetchCarts = async () => {
+      try {
+        const data = await httpMethod<Cart[]>(END_POINT.CARTS, 'GET');
+        setCarts(data);
+        console.log(data);
+      } catch (error) {
+        console.error('장바구니 조회 실패', error);
+      }
+    };
+
+    fetchCarts();
+  }, []);
 
   return (
     <div className="flex flex-1 flex-col bg-gray-100">

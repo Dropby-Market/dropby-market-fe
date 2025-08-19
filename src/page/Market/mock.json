@@ -1,0 +1,92 @@
+[
+  {
+    "marketId": 1,
+    "name": "광장시장",
+    "description": "서울의 대표 전통시장으로 다양한 먹거리와 쇼핑을 즐길 수 있습니다.",
+    "lat": 37.5700,
+    "lng": 126.9900,
+    "phoneNumber": "02-123-4567",
+    "imageUrl": "http://example.com/market1.jpg"
+  },
+  {
+    "marketId": 2,
+    "name": "남대문시장",
+    "description": "의류와 잡화, 전통 음식이 가득한 서울 남대문의 명소.",
+    "lat": 37.5600,
+    "lng": 126.9850,
+    "phoneNumber": "02-234-5678",
+    "imageUrl": "http://example.com/market2.jpg"
+  },
+  {
+    "marketId": 3,
+    "name": "통인시장",
+    "description": "전통과 현대가 어우러진 서울 종로의 대표 시장",
+    "lat": 37.5705,
+    "lng": 126.9740,
+    "phoneNumber": "02-345-6789",
+    "imageUrl": "http://example.com/market3.jpg"
+  },
+  {
+    "marketId": 4,
+    "name": "망원시장",
+    "description": "소규모 상점과 카페가 혼합된 트렌디한 시장",
+    "lat": 37.5560,
+    "lng": 126.9100,
+    "phoneNumber": "02-456-7890",
+    "imageUrl": "http://example.com/market4.jpg"
+  },
+  {
+    "marketId": 5,
+    "name": "합정시장",
+    "description": "홍대 근처의 젊은층 시장과 먹거리 골목",
+    "lat": 37.5490,
+    "lng": 126.9120,
+    "phoneNumber": "02-567-8901",
+    "imageUrl": "http://example.com/market5.jpg"
+  },
+  {
+    "marketId": 6,
+    "name": "연남시장",
+    "description": "조용하고 아기자기한 가게가 모인 동네 시장",
+    "lat": 37.5660,
+    "lng": 126.9270,
+    "phoneNumber": "02-678-9012",
+    "imageUrl": "http://example.com/market6.jpg"
+  },
+  {
+    "marketId": 7,
+    "name": "동대문시장",
+    "description": "의류 도매와 전통 음식이 혼합된 대규모 시장",
+    "lat": 37.5708,
+    "lng": 127.0090,
+    "phoneNumber": "02-789-0123",
+    "imageUrl": "http://example.com/market7.jpg"
+  },
+  {
+    "marketId": 8,
+    "name": "종로시장",
+    "description": "전통과 현대가 섞인 음식과 소품 시장",
+    "lat": 37.5720,
+    "lng": 126.9850,
+    "phoneNumber": "02-890-1234",
+    "imageUrl": "http://example.com/market8.jpg"
+  },
+  {
+    "marketId": 9,
+    "name": "청량리시장",
+    "description": "전통 음식과 생활용품이 있는 동네 시장",
+    "lat": 37.5800,
+    "lng": 127.0450,
+    "phoneNumber": "02-901-2345",
+    "imageUrl": "http://example.com/market9.jpg"
+  },
+  {
+    "marketId": 10,
+    "name": "홍대시장",
+    "description": "젊은층이 많이 찾는 트렌디한 전통시장",
+    "lat": 37.5565,
+    "lng": 126.9220,
+    "phoneNumber": "02-012-3456",
+    "imageUrl": "http://example.com/market10.jpg"
+  }
+]
