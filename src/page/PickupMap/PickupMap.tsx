@@ -1,7 +1,12 @@
 import React from 'react';
+import Tmap from '@/page/PickupMap/components/Tmap.tsx';
 
 const PickupMap = () => {
-  return <div>픽업 지도 페이지</div>;
+  return (
+    <div className="flex-1">
+      <Tmap />
+    </div>
+  );
 };
 
 export default PickupMap;

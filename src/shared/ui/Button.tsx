@@ -20,8 +20,8 @@ const buttonVariants = cva(
         outline: 'border border-gray-300 text-gray-500 hover:border-gray-300/50',
       },
       size: {
-        sm: 'py-2.5 text-xs leading-4 font-medium',
-        md: 'py-3.5 text-sm leading-5 font-semibold',
+        sm: 'p-2.5 text-xs leading-4 font-medium',
+        md: 'p-3.5 text-sm leading-5 font-semibold',
       },
     },
     defaultVariants: {
@@ -31,7 +31,7 @@ const buttonVariants = cva(
   }
 );
 
-export function Button({
+export default function Button({
   asChild = false,
   variant,
   size,

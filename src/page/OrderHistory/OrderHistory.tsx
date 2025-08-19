@@ -1,7 +1,13 @@
-import React from 'react';
+import OrderItem from '@/page/OrderHistory/components/OrderItem.tsx';
 
-const OrderHistory = () => {
-  return <div>주문내역 페이지</div>;
-};
-
-export default OrderHistory;
+export default function OrderHistory() {
+  return (
+    <div className="flex-1 bg-gray-100 p-4">
+      <ul className="space-y-2.5">
+        {Array.from({ length: 10 }).map((_, idx) => (
+          <OrderItem key={idx} />
+        ))}
+      </ul>
+    </div>
+  );
+}
