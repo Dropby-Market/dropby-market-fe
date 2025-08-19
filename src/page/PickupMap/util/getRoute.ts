@@ -1,12 +1,12 @@
 import axios from "axios";
 
 export async function getRoute() {
-  const startX = 127.148372 ;
-  const startY = 36.800073;
-  const endX = 127.149450;
-  const endY = 36.801720;
+  const startX = 127.147518;
+  const startY = 36.800243;
+  const endX = 127.149212;
+  const endY = 36.801644;
   const passList =
-    "127.149342,36.800759_127.150280,36.800738";
+    "127.149560,36.800312_127.150076,36.8011786";
   const startName = "출발"
   const endName = "도착"
 
