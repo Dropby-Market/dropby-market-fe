@@ -22,6 +22,14 @@ export default function Tmap() {
       zoom: 15,
     });
 
+    const marker = new window.Tmapv3.Marker({
+      position: new window.Tmapv3.LatLng(36.800243, 127.147518),
+      map: map,
+      title: '출발지',
+      icon: 'src/assets/map/MyLocation.svg',
+    });
+
+
     const addMarker = (lon: number, lat: number, tag: number) => {
       const marker = new window.Tmapv3.Marker({
         position: new window.Tmapv3.LatLng(lat, lon),

@@ -1,7 +1,7 @@
 import { fitMapBounds } from '@/page/PickupMap/util/fitMapBounds.ts';
 
 export function drawLine(map, data) {
-  const pointArray= [];
+  const pointArray = [];
   const new_polyLine = [];
   const markers = [];
 
@@ -36,32 +36,6 @@ export function drawLine(map, data) {
       pointId1 = pointId2;
     } else {
       equalData.push(feature);
-    }
-  }
-
-  for (let i = 0; i < newData.length; i++) {
-    const mData = newData[i];
-    const pointType = mData[0].properties.pointType;
-
-    let lon: number, lat: number, img: string | undefined;
-
-    if (pointType === 'S') {
-      img = '/upload/tmap/marker/pin_r_m_s.png';
-      [lon, lat] = mData[0].geometry.coordinates;
-    } else if (pointType === 'E') {
-      img = '/upload/tmap/marker/pin_r_m_e.png';
-      [lon, lat] = mData[0].geometry.coordinates;
-    } else {
-      [lon, lat] = mData[0].geometry.coordinates;
-    }
-
-    if (lon && lat) {
-      const marker = new window.Tmapv3.Marker({
-        position: new window.Tmapv3.LatLng(lat, lon),
-        map,
-        icon: img,
-      });
-      markers.push(marker);
     }
   }
 
