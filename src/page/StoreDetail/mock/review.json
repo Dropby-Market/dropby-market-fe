@@ -227,9 +227,9 @@
         {
           "id": 1,
           "name": "러브버그",
-          "profile": "Example",
+          "profile": "",
           "star": 4,
-          "image": ["Example", "Example", "Example","Example","Example"],
+          "image": "",
           "date": "2025.08.24",
           "description": "새로 생겼나봐요. 생크림케이크가 부드럽고 달지 않아 만족스러웠습니다. 특별한 날에 딱이에요!"
         }
@@ -244,9 +244,9 @@
         {
           "id": 1,
           "name": "많이배고픈",
-          "profile": "Example",
+          "profile": "",
           "star": 5,
-          "image": ["Example", "Example", "Example","Example","Example"],
+          "image": "",
           "date": "2025.08.12",
           "description": "앙버터가 너무 맛있어요. 단팥이 달지 않고 버터가 진해서 밸런스가 딱 좋았습니다."
         },
@@ -270,9 +270,9 @@
         {
           "id": 1,
           "name": "먹고 또 먹고",
-          "profile": "Example",
+          "profile": "",
           "star": 5,
-          "image": ["Example", "Example", "Example","Example","Example"],
+          "image": "",
           "date": "2025.08.06",
           "description": "딸기케이크가 너무 상큼하고 부드러워요. 생일케이크로 완전 추천합니다."
         },
@@ -332,9 +332,9 @@
         {
           "id": 1,
           "name": "파이썬",
-          "profile": "Example",
+          "profile": "",
           "star": 5,
-          "image": ["Example", "Example", "Example","Example","Example"],
+          "image": "",
           "date": "2025.08.06",
           "description": "호두파이가 고소하고 달콤해요. 식감이 정말 좋아서 또 사먹고 싶네요."
         },
