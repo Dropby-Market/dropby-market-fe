@@ -19,8 +19,8 @@ import StoreItem from './components/StoreItem';
 import StoreReview from './components/StoreReview';
 
 const StoreDetail = () => {
-    const params = useParams();
-    const [activeTab, setActiveTab] = useState("메뉴");
+  const params = useParams();
+  const [activeTab, setActiveTab] = useState("메뉴");
 
 
   const [items, setItems] = useState([]);
@@ -152,7 +152,7 @@ const StoreDetail = () => {
             지도
           </div>
           <div className="flex w-full divide-x-2 divide-[#E5E7EB]">
-            <MapCopyBtn/>
+            <MapCopyBtn address={store.address}/>
             <MapDetailBtn/>
           </div>
         </div>
@@ -185,7 +185,9 @@ const StoreDetail = () => {
           <StoreItem key={item.id}
           name={item.name}
           price={item.price}
-          image={item.image}/>
+          image={item.image}
+          storeId={store.storeId}
+          menuId={item.id}/>
         ))}
         </>
         }

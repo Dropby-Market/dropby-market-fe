@@ -24,7 +24,7 @@ const Payment = lazy(() => import('../page/Payment/Payment.tsx'));
 const PickupMap = lazy(() => import('../page/PickupMap/PickupMap.tsx'));
 
 const StoreDetail = lazy(() => import('../page/StoreDetail/StoreDetail.jsx'));
-const StoreMenuDetail = lazy(() => import('@/page/Store/StoreMenuDetail/StoreMenuDetail.tsx'));
+const StoreMenuDetail = lazy(() => import('@/page/Store/StoreMenuDetail/StoreMenuDetail.jsx'));
 
 const Cart = lazy(() => import('../page/Cart/Cart.tsx'));
 
