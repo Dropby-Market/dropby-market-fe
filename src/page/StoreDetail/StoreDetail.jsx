@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 // 이미지랑 아이콘 불러오기
 import Example from "@/assets/storeDetail/Example.png";
@@ -18,66 +19,34 @@ import StoreItem from './components/StoreItem';
 import StoreReview from './components/StoreReview';
 
 const StoreDetail = () => {
-  const params = useParams();
-  const [activeTab, setActiveTab] = useState("메뉴");
+    const params = useParams();
+    const [activeTab, setActiveTab] = useState("메뉴");
 
-  // 가게 정보객체
-  const store = {
-    id: 1,
-    name: "못난이사과",
-    category: "과일전문",
-    market: "천안중앙시장",
-    rating: 4.2,
-    reviewCount: 48,
-    description: "못생겨도 맛은 진심인 사과",
-    time: "0~5",
-    phone: "010-1234-5678",
-    distance:"208m",
-    address: "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
-  }
+    const [allStores, setAllStores] = useState([]);
+    const [store, setStore] = useState(null);
 
-  // 상품 리스트
-  const storeItem = [
-      {id: 1, name: "못난이 포도 1봉지",price: 15000, image: Example},
-      {id: 2, name: "못난이 참외 1봉지",price: 18000, image: ""}
-    ]
+    useEffect(() => {
+      const fetchStores = async () => {
+        try {
+          const url = new URL("./mock.json", import.meta.url).href;
+          const { data } = await axios.get(url);
+          setAllStores(data);
 
-  // 정보탭
-  const storeInfo = {
-    id: 1,
-    hours: "매일 10:00 - 18:00",
-    break: "주말, 공휴일",
-    description: "상품성이 없어 납품하지 못해 버려지는 과일들을 판매하고 있습니다. 저희 가게 과일들의 울퉁불퉁한 매력을 인정하신다면, 맛 좋은 과일들을 많이 접해보실 수 있을 겁니다! (민생회복 소비쿠폰 사용 가능합니다. 현장 결제 선택 후 매장에서 말씀해주세요!)",
-    pay: [
-      {id: 1, name: "제로페이"},
-      {id: 2, name: "민생회복 소비쿠폰"}
-    ],
-    entre: "이정현",
-    num: "123-465-7894",
-    origin: "사과(국내산) 샤인머스켓(국내산) 멜론(국내산,미국산) 포도(국내산) 참외(국내산) 단감(국내산)"
-  }
+          const selectedStore = data.find(s => s.storeId === Number(params.storeId));
+          setStore(selectedStore || null);
+        } catch (error) {
+          console.error("가게 조회 실패", error);
+        }
+      };
 
-  // 리뷰
-  const review = {
-    id: 1,
-    count: 1234,
-    post: [
-    {id: 1,
-      name: "먹고 또 먹고",
-      profile: Example,
-      star: 5,
-      image: [Example, Example, Example,Example,Example],
-      date: "2025.08.06",
-      description: "못 보던 가게. 오늘 처음 가봤어요. 사장님 친절하시고 과일 상한 것 없이 맛이 좋았습니다."},
-    {id: 2,
-      name: "정현이",
-      profile: "",
-      star: 3,
-      image: '',
-      date: "2025.08.06",
-      description: "맛있어요 좋아요"}
-    ]
-  }
+      fetchStores();
+    }, [params.storeId]);
+
+    if (!store) {
+      return <div>가게 정보를 불러오는 중입니다.</div>;
+    }
+
+
 
   return (
     <div className="min-h-screen mx-4">
@@ -89,14 +58,13 @@ const StoreDetail = () => {
       {/*가게 이름, 별점, 설명*/}
       <header className="py-5">
         <div className="flex gap-1 text-xs leading-4 font-medium text-[#9CA3AF]">
-          <span>{store.market}</span>
+          <span>{store.name}</span>
           <span className="text-[#E5E7EB]">|</span>
           <span>{store.category}</span>
         </div>
 
         <div className="flex justify-between">
           <h1 className="text-2xl leading-8 font-semibold">{store.name}</h1>
-          {/* 저장 안되는 저장버튼(구현되면 지우기) */}
           <SaveButton />
         </div>
 
@@ -153,8 +121,8 @@ const StoreDetail = () => {
             지도
           </div>
           <div className="flex w-full divide-x-2 divide-[#E5E7EB]">
-            <MapCopyBtn address={store.address}/>
-            <MapDetailBtn />
+            <MapCopyBtn/>
+            <MapDetailBtn/>
           </div>
         </div>
       </nav>
@@ -182,7 +150,7 @@ const StoreDetail = () => {
       <main>
         {/* 메뉴탭 */}
         {activeTab === "메뉴" && <>
-        {storeItem.map((item)=>(
+        {store.items?.map((item)=>(
           <StoreItem key={item.id}
           name={item.name}
           price={item.price}
@@ -195,10 +163,10 @@ const StoreDetail = () => {
         {activeTab === "리뷰" && <>
         <div className="flex items-center gap-1 pt-5 pb-6">
           <h2 className="text-[#1F2937] text-lg leading-7 font-semibold">리뷰</h2>
-          <p className="text-[#6B7280] text-lg leading-7 font-semibold">{review.count.toLocaleString()}개</p>
+          <p className="text-[#6B7280] text-lg leading-7 font-semibold">{store.review.count.toLocaleString()}개</p>
         </div>
         
-        {review.post.map((post) => (
+        {store.review.post.map((post) => (
           <StoreReview
           key={post.id}
           name={post.name}
@@ -220,6 +188,7 @@ const StoreDetail = () => {
                 <col/>
               </colgroup>
 
+            <tbody>
               <tr>
                 <td className="text-[#1F2937] text-xs leading-4 font-medium">상호명</td>
                 <td className="text-[#1F2937] text-xs leading-4 font-medium">{store.name}</td>
@@ -227,25 +196,26 @@ const StoreDetail = () => {
 
               <tr>
                 <td className="py-3.5 text-[#1F2937] text-xs leading-4 font-medium">운영시간</td>
-                <td className="py-3.5 text-[#1F2937] text-xs leading-4 font-medium">{storeInfo.hours}</td>
+                <td className="py-3.5 text-[#1F2937] text-xs leading-4 font-medium">{store.openingHours}</td>
               </tr>
 
               <tr>
                 <td className="text-[#1F2937] text-xs leading-4 font-medium">휴무일</td>
-                <td className="text-[#1F2937] text-xs leading-4 font-medium">{storeInfo.break}</td>
+                <td className="text-[#1F2937] text-xs leading-4 font-medium">{store.storeInfo.break}</td>
               </tr>
+            </tbody>
             </table>
             
             <div className="my-3.5 border border-[#F3F4F6] w-full h-[1.5px]" />
 
             <h2 className="text-[#1F2937] text-sm leading-5 font-semibold pb-3">가게 소개</h2>
-            <p className="text-[#1F2937] text-xs leading-4 font-medium">{storeInfo.description}</p>
+            <p className="text-[#1F2937] text-xs leading-4 font-medium">{store.storeInfo.description}</p>
 
             <div className="my-3.5 border border-[#F3F4F6] w-full h-[1.5px]" />
 
             <h2 className="text-[#1F2937] text-sm leading-5 font-semibold pb-3">결제 수단</h2>
             <ul className="flex gap-1">
-            {storeInfo.pay.map((method) => (
+            {store.storeInfo.pay.map((method) => (
               <li
               key={method.id}
               className="bg-[#EFF6FF] text-[#3B82F6] text-xs leading-4 font-medium rounded-md p-1">
@@ -266,7 +236,7 @@ const StoreDetail = () => {
               <tbody>
                 <tr>
                   <td className="text-[#1F2937] text-xs leading-4 font-medium">대표명</td>
-                  <td className="text-[#1F2937] text-xs leading-4 font-medium">{storeInfo.entre}</td>
+                  <td className="text-[#1F2937] text-xs leading-4 font-medium">{store.storeInfo.entre}</td>
                 </tr>
 
                 <tr>
@@ -281,7 +251,7 @@ const StoreDetail = () => {
 
                 <tr>
                   <td className="text-[#1F2937] text-xs leading-4 font-medium">사업자번호</td>
-                  <td className="text-[#1F2937] text-xs leading-4 font-medium">{storeInfo.num}</td>
+                  <td className="text-[#1F2937] text-xs leading-4 font-medium">{store.storeInfo.num}</td>
                 </tr>
               </tbody>
             </table>
@@ -289,7 +259,7 @@ const StoreDetail = () => {
             <div className="my-3.5 border border-[#F3F4F6] w-full h-[1.5px]" />
 
             <h2 className="text-[#1F2937] text-sm leading-5 font-semibold pb-3">원산지 표기</h2>
-            <p className="text-[#1F2937] text-xs leading-4 font-medium">{storeInfo.origin}</p>
+            <p className="text-[#1F2937] text-xs leading-4 font-medium">{store.storeInfo.origin}</p>
 
             <div className="my-3.5 border border-[#F3F4F6] w-full h-[1.5px]" />
           </div>}

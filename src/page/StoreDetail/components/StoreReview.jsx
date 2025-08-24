@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Star from "@/assets/storeDetail/StarIcon.svg?react";
 
 const StoreReview = ({ name, profile, star, image, date, description }) => {
     const stars = Array.from({length: star})
+    const [open, setOpen] = useState(false);
 
     return (
         <article>
@@ -34,7 +35,8 @@ const StoreReview = ({ name, profile, star, image, date, description }) => {
                         key = {idx}
                         src = {img}
                         alt = {`review-${idx}`}
-                        className="w-30 h-30 rounded-md" />
+                        onClick={() => setOpen(true)}
+                        className="w-30 h-30 rounded-md object-cover" />
                     ))}
                 </div>
             )}

@@ -1,0 +1,800 @@
+[
+  {
+    "storeId": 1,
+    "name": "매콤떡볶이",
+    "category": "분식",
+    "rating": 4.2,
+    "openingHours": "10:00 - 22:00",
+    "imageUrl": "http://example.com/분식_1.jpg",
+    "lat": 37.56651,
+    "lng": 126.97834,
+    "description": "정통 매콤떡볶이를 맛볼 수 있는 가게로, 학생들에게 인기 만점입니다.",
+    "reviewCount": 6,
+    "time": "10~15",
+    "phone": "010-1234-5678",
+    "distance":"1.2km",
+    "address": "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
+    "items": [
+        {
+            "id": 1,
+            "name": "국물떡볶이",
+            "price": 5000,
+            "image": ""
+        },
+        {
+            "id": 2,
+            "name": "치즈떡볶이",
+            "price": 6000,
+            "image": ""
+        },
+        {
+            "id": 3,
+            "name": "로제떡볶이",
+            "price": 7000,
+            "image": ""
+        },
+        {
+            "id": 4,
+            "name": "튀김모듬",
+            "price": 6000,
+            "image": ""
+        },
+        {
+            "id": 5,
+            "name": "순대세트",
+            "price": 6000,
+            "image": ""
+        },
+        {
+            "id": 6,
+            "name": "김밥세트",
+            "price": 6500,
+            "image": ""
+        }
+      ],
+      "review": {
+        "count": 6,
+        "post" : [
+        {
+          "id": 1,
+          "name": "떡볶이매니아",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.07.12",
+          "description": "양도 많고 맛있어요!"
+        },
+        {
+          "id": 2,
+          "name": "hot_chili",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.01",
+          "description": "조금 매웠지만 만족합니다."
+        },
+        {
+          "id": 3,
+          "name": "분식러버",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.07.21",
+          "description": "조금 짜긴 했지만 전체적으로 괜찮았어요."
+        },
+{
+          "id": 4,
+          "name": "로제홀릭",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.07.31",
+          "description": "정말 매콤하고 맛있었어요! 다음에도 또 올거예요."
+        },
+        {
+          "id": 5,
+          "name": "튀김킹",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.23",
+          "description": "치즈가 듬뿍 들어있어서 만족스러웠습니다."
+        },
+        {
+          "id": 6,
+          "name": "kimbap_lover22",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.07.31",
+          "description": "튁김이 바삭하고 떡볶이랑 같이 먹으니 최고!"
+        }
+      ]
+    },
+    "storeInfo": {
+      "break": "일요일",
+      "description": "매콤떡볶이는 10년 이상 사랑받아온 동네 맛집으로, 신선한 재료와 직접 만든 매운 양념으로 깊은 맛을 자랑합니다. 모든 소스는 매일 아침 직접 준비하며, 주문 즉시 조리해 따뜻한 음식을 제공합니다. 매운맛 단계 선택이 가능해 남녀노소 모두 즐길 수 있고, 친구들과 간단히 모여 식사하기에 딱 좋은 공간을 갖추고 있습니다.",
+      "pay": [
+        {"id": 1, "name": "현금"},
+        {"id": 2, "name": "카드"},
+        {"id": 2, "name": "간편결제"}
+      ],
+      "entre": "이정현",
+      "num": "123-46-78944",
+      "origin": "쌀(국내산), 고추가루(국내산), 양파(중국산)"
+    }
+  },
+
+  {
+    "storeId": 2,
+    "name": "김밥천국",
+    "category": "분식",
+    "rating": 4.2,
+    "openingHours": "09:00 - 23:30",
+    "imageUrl": "http://example.com/분식_2.jpg",
+    "lat": 37.56682,
+    "lng": 126.97876,
+    "description": "다양한 종류의 김밥과 튀김을 즐길 수 있는 가족 친화적인 분식집입니다.",
+    "reviewCount": 5,
+    "time": "10~15",
+    "phone": "010-2345-6789",
+    "distance":"800m",
+    "address": "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
+    "items": [
+        {
+            "id": 1,
+            "name": "참치김밥",
+            "price": 4000,
+            "image": "Example"
+        },
+        {
+            "id": 2,
+            "name": "치즈김밥",
+            "price": 4500,
+            "image": ""
+        },
+        {
+            "id": 3,
+            "name": "돈까스김밥",
+            "price": 5000,
+            "image": ""
+        },
+        {
+            "id": 4,
+            "name": "제육덮밥",
+            "price": 7000,
+            "image": ""
+        },
+        {
+            "id": 5,
+            "name": "라면세트",
+            "price": 6500,
+            "image": ""
+        }
+      ],
+      "review": {
+        "count": 5,
+        "post" : [
+        {
+          "id": 1,
+          "name": "강아지발톱",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "가성비 최고! 양도 많고 맛도 좋아요."
+        },
+        {
+          "id": 2,
+          "name": "으아악",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.24",
+          "description": "야식으로 먹었는데 딱이었어요."
+        },
+        {
+          "id": 3,
+          "name": "우왕",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.01",
+          "description": "치즈김밥 강력 추천합니다!"
+        },
+        {
+          "id": 4,
+          "name": "배고파요",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.07.20",
+          "description": "맛은 괜찮지만 조금 늦게 나왔어요."
+        },
+        {
+          "id": 5,
+          "name": "정현이",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.04",
+          "description": "항상 믿고 먹는 김밥천국."
+        }
+      ]
+    },
+    "storeInfo": {
+      "break": "연중무휴",
+      "description": "김밥천국은 빠르고 저렴하게 즐길 수 있는 분식의 대명사입니다. 김밥 종류만 20가지 이상을 준비해 누구나 원하는 취향에 맞게 선택할 수 있으며, 매장에서 직접 조리한 따끈한 라면과 함께 드시면 더욱 든든한 한 끼가 됩니다. 특히 포장 주문이 많아 학생들과 직장인들에게 꾸준히 사랑받고 있습니다.",
+      "pay": [
+        {"id": 1, "name": "현금"},
+        {"id": 2, "name": "카드"},
+        {"id": 3, "name": "민생회복 소비쿠폰"}
+      ],
+      "entre": "김철수",
+      "num": "234-56-78901",
+      "origin": "쌀(국내산), 김(국내산), 참치(필리핀산), 당근(국내산), 시금치(국내산)"
+    }
+  },
+
+  {
+    "storeId": 3,
+    "name": "분식마을",
+    "category": "분식",
+    "rating": 5,
+    "openingHours": "11:00 - 20:00",
+    "imageUrl": "http://example.com/분식_3.jpg",
+    "lat": 37.56693,
+    "lng": 126.97812,
+    "description": "오랜 전통을 자랑하는 분식집으로, 소문난 떡볶이 맛집입니다.",
+    "reviewCount": 2,
+    "time": "15~20",
+    "phone": "010-1234-5678",
+    "distance":"208m",
+    "address": "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
+    "items": [
+        {
+            "id": 1,
+            "name": "왕창 맛난 떡볶이 세트",
+            "price": 6000,
+            "image": "Example"
+        },
+        {
+            "id": 2,
+            "name": "떡볶이보단 덜 맛난 김밥 세트",
+            "price": 6500,
+            "image": ""
+        },
+        {
+            "id": 3,
+            "name": "순대 세트",
+            "price": 7000,
+            "image": ""
+        },
+        {
+            "id": 4,
+            "name": "어묵탕",
+            "price": 5000,
+            "image": ""
+        },
+        {
+            "id": 5,
+            "name": "튀김모둠",
+            "price": 4500,
+            "image": ""
+        }
+      ],
+      "review": {
+        "count": 2,
+        "post" : [
+        {
+          "id": 1,
+          "name": "바다코끼리",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "세트 구성이 좋아서 다양하게 즐길 수 있어요."
+        },
+        {
+          "id": 2,
+          "name": "수염난 발가락",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "사장님 친절하시고 맛도 훌륭합니다."
+        }
+      ]
+    },
+    "storeInfo": {
+      "id": 1,
+      "break": "주말, 공휴일",
+      "description": "분식마을은.동네.주민들이 모여 편하게.즐길 수 있는.따뜻한 분식 공간입니다. 오랜 시간 끓여낸.어묵.국물과 정성껏 만든 김밥은 많은 단골 손님들이 다시 찾게.만드는.비밀입니다. 학생, 가족, 직장인 누구나 부담 없이 들러 든든한 한 끼를 즐기실 수 있읍니다.",
+      "pay": [
+        {"id": 1, "name": "현금"},
+        {"id": 2, "name": "카드"},
+        {"id": 3, "name": "제로페이"}
+      ],
+      "entre": "이영희",
+      "num": "345-78-90123",
+      "origin": "쌀(국내산), 돼지고기(국내산), 오징어(북태평양), 쇠고기(호주, 미국산), 순대(국내산), 고추가루(국산, 중국산)"
+    }
+  },
+
+  {
+    "storeId": 4,
+    "name": "튀김천국",
+    "category": "분식",
+    "rating": 4,
+    "openingHours": "10:00 - 22:00",
+    "imageUrl": "http://example.com/분식_4.jpg",
+    "lat": 37.56674,
+    "lng": 126.97845,
+    "description": "바삭하고 맛있는 튀김을 전문으로 하는 분식집입니다.",
+    "reviewCount": 48,
+    "time": "7~15",
+    "phone": "02-456-7890",
+    "distance":"1.9k",
+    "address": "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
+    "items": [
+        {
+            "id": 1,
+            "name": "모둠튀김 세트",
+            "price": 9500,
+            "image": "Example"
+        },
+        {
+            "id": 2,
+            "name": "고구마튀김",
+            "price": 4000,
+            "image": ""
+        },
+        {
+            "id": 3,
+            "name": "새우튀김",
+            "price": 4000,
+            "image": ""
+        },
+        {
+            "id": 4,
+            "name": "오징어튀김",
+            "price": 5000,
+            "image": ""
+        }
+      ],
+      "review": {
+        "count": 3,
+        "post" : [
+        {
+          "id": 1,
+          "name": "냠냠",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "튀김이 기름지지 않고 바삭해서 만족! 특히 새우튀김은 살이 꽉 차있어서 최고였어요."
+        },
+        {
+          "id": 2,
+          "name": "아카자",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.08.23",
+          "description": "고구마튀김은 달콤하고 맛있었는데, 양이 조금 아쉬웠어요."
+        },
+        {
+          "id": 3,
+          "name": "눈알스티커",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.07.21",
+          "description": "튀김우동 국물이 시원하고 튀김이 불지 않아 너무 좋았습니다."
+        }
+      ]
+    },
+    "storeInfo": {
+      "id": 1,
+      "break": "주말, 공휴일",
+      "description": "상품성이 없어 납품하지 못해 버려지는 과일들을 판매하고 있습니다. 저희 가게 과일들의 울퉁불퉁한 매력을 인정하신다면, 맛 좋은 과일들을 많이 접해보실 수 있을 겁니다! (민생회복 소비쿠폰 사용 가능합니다. 현장 결제 선택 후 매장에서 말씀해주세요!)",
+      "pay": [
+        {"id": 1, "name": "제로페이"},
+        {"id": 2, "name": "민생회복 소비쿠폰"}
+      ],
+      "entre": "이정현",
+      "num": "123-465-7894",
+      "origin": "사과(국내산) 샤인머스켓(국내산) 멜론(국내산,미국산) 포도(국내산) 참외(국내산) 단감(국내산)"
+    }
+  },
+
+  {
+    "storeId": 5,
+    "name": "분식나라",
+    "category": "분식",
+    "rating": 5,
+    "openingHours": "10:30 - 21:30",
+    "imageUrl": "http://example.com/분식_5.jpg",
+    "lat": 37.56688,
+    "lng": 126.97863,
+    "description": "학생들의 출출한 시간을 책임지는 인기 분식점입니다.",
+    "reviewCount": 48,
+    "time": "0~5",
+    "phone": "010-1234-5678",
+    "distance":"208m",
+    "address": "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
+        "items": [
+        {
+            "id": 1,
+            "name": "못난이 포도 1봉지",
+            "price": 15000,
+            "image": "Example"
+        },
+        {
+            "id": 2,
+            "name": "못난이 참외 1봉지",
+            "price": 18000,
+            "image": ""
+        }],
+      "review": {
+        "count": 1234,
+        "post" : [
+        {
+          "id": 1,
+          "name": "먹고 또 먹고",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "못 보던 가게. 오늘 처음 가봤어요. 사장님 친절하시고 과일 상한 것 없이 맛이 좋았습니다."
+        },
+        {
+          "id": 2,
+          "name": "정현이",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "맛있어요 좋아요"
+        }
+      ]
+    },
+    "storeInfo": {
+      "id": 1,
+      "break": "주말, 공휴일",
+      "description": "상품성이 없어 납품하지 못해 버려지는 과일들을 판매하고 있습니다. 저희 가게 과일들의 울퉁불퉁한 매력을 인정하신다면, 맛 좋은 과일들을 많이 접해보실 수 있을 겁니다! (민생회복 소비쿠폰 사용 가능합니다. 현장 결제 선택 후 매장에서 말씀해주세요!)",
+      "pay": [
+        {"id": 1, "name": "제로페이"},
+        {"id": 2, "name": "민생회복 소비쿠폰"}
+      ],
+      "entre": "이정현",
+      "num": "123-465-7894",
+      "origin": "사과(국내산) 샤인머스켓(국내산) 멜론(국내산,미국산) 포도(국내산) 참외(국내산) 단감(국내산)"
+    }
+  },
+
+  {
+    "storeId": 6,
+    "name": "빵굽는 아침",
+    "category": "빵",
+    "rating": 5,
+    "openingHours": "08:00 - 19:00",
+    "imageUrl": "http://example.com/빵_1.jpg",
+    "lat": 37.56701,
+    "lng": 126.97856,
+    "description": "갓 구운 빵과 크루아상을 판매하며 아침마다 신선한 냄새로 가득합니다.",
+    "reviewCount": 48,
+    "time": "0~5",
+    "phone": "010-1234-5678",
+    "distance":"208m",
+    "address": "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
+        "items": [
+        {
+            "id": 1,
+            "name": "못난이 포도 1봉지",
+            "price": 15000,
+            "image": "Example"
+        },
+        {
+            "id": 2,
+            "name": "못난이 참외 1봉지",
+            "price": 18000,
+            "image": ""
+        }],
+      "review": {
+        "count": 1234,
+        "post" : [
+        {
+          "id": 1,
+          "name": "먹고 또 먹고",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "못 보던 가게. 오늘 처음 가봤어요. 사장님 친절하시고 과일 상한 것 없이 맛이 좋았습니다."
+        },
+        {
+          "id": 2,
+          "name": "정현이",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "맛있어요 좋아요"
+        }
+      ]
+    },
+    "storeInfo": {
+      "id": 1,
+      "break": "주말, 공휴일",
+      "description": "상품성이 없어 납품하지 못해 버려지는 과일들을 판매하고 있습니다. 저희 가게 과일들의 울퉁불퉁한 매력을 인정하신다면, 맛 좋은 과일들을 많이 접해보실 수 있을 겁니다! (민생회복 소비쿠폰 사용 가능합니다. 현장 결제 선택 후 매장에서 말씀해주세요!)",
+      "pay": [
+        {"id": 1, "name": "제로페이"},
+        {"id": 2, "name": "민생회복 소비쿠폰"}
+      ],
+      "entre": "이정현",
+      "num": "123-465-7894",
+      "origin": "사과(국내산) 샤인머스켓(국내산) 멜론(국내산,미국산) 포도(국내산) 참외(국내산) 단감(국내산)"
+    }
+  },
+
+  {
+    "storeId": 7,
+    "name": "달콤한 빵집",
+    "category": "빵",
+    "rating": 4,
+    "openingHours": "07:00 - 20:00",
+    "imageUrl": "http://example.com/빵_2.jpg",
+    "lat": 37.56678,
+    "lng": 126.97889,
+    "description": "케이크와 디저트빵이 유명하며, 달콤한 간식을 좋아하는 사람들에게 인기입니다.",
+    "reviewCount": 48,
+    "time": "0~5",
+    "phone": "010-1234-5678",
+    "distance":"208m",
+    "address": "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
+        "items": [
+        {
+            "id": 1,
+            "name": "못난이 포도 1봉지",
+            "price": 15000,
+            "image": "Example"
+        },
+        {
+            "id": 2,
+            "name": "못난이 참외 1봉지",
+            "price": 18000,
+            "image": ""
+        }],
+      "review": {
+        "count": 1234,
+        "post" : [
+        {
+          "id": 1,
+          "name": "먹고 또 먹고",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "못 보던 가게. 오늘 처음 가봤어요. 사장님 친절하시고 과일 상한 것 없이 맛이 좋았습니다."
+        },
+        {
+          "id": 2,
+          "name": "정현이",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "맛있어요 좋아요"
+        }
+      ]
+    },
+    "storeInfo": {
+      "id": 1,
+      "break": "주말, 공휴일",
+      "description": "상품성이 없어 납품하지 못해 버려지는 과일들을 판매하고 있습니다. 저희 가게 과일들의 울퉁불퉁한 매력을 인정하신다면, 맛 좋은 과일들을 많이 접해보실 수 있을 겁니다! (민생회복 소비쿠폰 사용 가능합니다. 현장 결제 선택 후 매장에서 말씀해주세요!)",
+      "pay": [
+        {"id": 1, "name": "제로페이"},
+        {"id": 2, "name": "민생회복 소비쿠폰"}
+      ],
+      "entre": "이정현",
+      "num": "123-465-7894",
+      "origin": "사과(국내산) 샤인머스켓(국내산) 멜론(국내산,미국산) 포도(국내산) 참외(국내산) 단감(국내산)"
+    }
+  },
+
+  {
+    "storeId": 8,
+    "name": "빵향기",
+    "category": "빵",
+    "rating": 5,
+    "openingHours": "08:30 - 19:30",
+    "imageUrl": "http://example.com/빵_3.jpg",
+    "lat": 37.56665,
+    "lng": 126.97842,
+    "description": "부드러운 빵과 풍미 가득한 크림빵을 제공합니다.",
+    "reviewCount": 48,
+    "time": "0~5",
+    "phone": "010-1234-5678",
+    "distance":"208m",
+    "address": "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
+        "items": [
+        {
+            "id": 1,
+            "name": "못난이 포도 1봉지",
+            "price": 15000,
+            "image": "Example"
+        },
+        {
+            "id": 2,
+            "name": "못난이 참외 1봉지",
+            "price": 18000,
+            "image": ""
+        }],
+      "review": {
+        "count": 1234,
+        "post" : [
+        {
+          "id": 1,
+          "name": "먹고 또 먹고",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "못 보던 가게. 오늘 처음 가봤어요. 사장님 친절하시고 과일 상한 것 없이 맛이 좋았습니다."
+        },
+        {
+          "id": 2,
+          "name": "정현이",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "맛있어요 좋아요"
+        }
+      ]
+    },
+    "storeInfo": {
+      "id": 1,
+      "break": "주말, 공휴일",
+      "description": "상품성이 없어 납품하지 못해 버려지는 과일들을 판매하고 있습니다. 저희 가게 과일들의 울퉁불퉁한 매력을 인정하신다면, 맛 좋은 과일들을 많이 접해보실 수 있을 겁니다! (민생회복 소비쿠폰 사용 가능합니다. 현장 결제 선택 후 매장에서 말씀해주세요!)",
+      "pay": [
+        {"id": 1, "name": "제로페이"},
+        {"id": 2, "name": "민생회복 소비쿠폰"}
+      ],
+      "entre": "이정현",
+      "num": "123-465-7894",
+      "origin": "사과(국내산) 샤인머스켓(국내산) 멜론(국내산,미국산) 포도(국내산) 참외(국내산) 단감(국내산)"
+    }
+  },
+
+  {
+    "storeId": 9,
+    "name": "베이커리 행복",
+    "category": "빵",
+    "rating": 4,
+    "openingHours": "08:00 - 21:00",
+    "imageUrl": "http://example.com/빵_4.jpg",
+    "lat": 37.56690,
+    "lng": 126.97870,
+    "description": "가성비 좋은 빵과 다양한 디저트를 만나볼 수 있는 베이커리입니다.",
+    "reviewCount": 48,
+    "time": "0~5",
+    "phone": "010-1234-5678",
+    "distance":"208m",
+    "address": "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
+        "items": [
+        {
+            "id": 1,
+            "name": "못난이 포도 1봉지",
+            "price": 15000,
+            "image": "Example"
+        },
+        {
+            "id": 2,
+            "name": "못난이 참외 1봉지",
+            "price": 18000,
+            "image": ""
+        }],
+      "review": {
+        "count": 1234,
+        "post" : [
+        {
+          "id": 1,
+          "name": "먹고 또 먹고",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "못 보던 가게. 오늘 처음 가봤어요. 사장님 친절하시고 과일 상한 것 없이 맛이 좋았습니다."
+        },
+        {
+          "id": 2,
+          "name": "정현이",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "맛있어요 좋아요"
+        }
+      ]
+    },
+    "storeInfo": {
+      "id": 1,
+      "break": "주말, 공휴일",
+      "description": "상품성이 없어 납품하지 못해 버려지는 과일들을 판매하고 있습니다. 저희 가게 과일들의 울퉁불퉁한 매력을 인정하신다면, 맛 좋은 과일들을 많이 접해보실 수 있을 겁니다! (민생회복 소비쿠폰 사용 가능합니다. 현장 결제 선택 후 매장에서 말씀해주세요!)",
+      "pay": [
+        {"id": 1, "name": "제로페이"},
+        {"id": 2, "name": "민생회복 소비쿠폰"}
+      ],
+      "entre": "이정현",
+      "num": "123-465-7894",
+      "origin": "사과(국내산) 샤인머스켓(국내산) 멜론(국내산,미국산) 포도(국내산) 참외(국내산) 단감(국내산)"
+    }
+  },
+
+  {
+    "storeId": 10,
+    "name": "고소한 빵집",
+    "category": "빵",
+    "rating": 3,
+    "openingHours": "09:00 - 20:00",
+    "imageUrl": "http://example.com/빵_5.jpg",
+    "lat": 37.56677,
+    "lng": 126.97855,
+    "description": "고소한 냄새가 나는 빵집으로, 아침 출근길 사람들에게 인기입니다.",
+    "reviewCount": 48,
+    "time": "0~5",
+    "phone": "010-1234-5678",
+    "distance":"208m",
+    "address": "충남 천안시 동남구 사직로 32 (충남 천안시 동남구 사직동 29-1)",
+        "items": [
+        {
+            "id": 1,
+            "name": "못난이 포도 1봉지",
+            "price": 15000,
+            "image": "Example"
+        },
+        {
+            "id": 2,
+            "name": "못난이 참외 1봉지",
+            "price": 18000,
+            "image": ""
+        }],
+      "review": {
+        "count": 1234,
+        "post" : [
+        {
+          "id": 1,
+          "name": "먹고 또 먹고",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "못 보던 가게. 오늘 처음 가봤어요. 사장님 친절하시고 과일 상한 것 없이 맛이 좋았습니다."
+        },
+        {
+          "id": 2,
+          "name": "정현이",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "맛있어요 좋아요"
+        }
+      ]
+    },
+    "storeInfo": {
+      "id": 1,
+      "break": "주말, 공휴일",
+      "description": "상품성이 없어 납품하지 못해 버려지는 과일들을 판매하고 있습니다. 저희 가게 과일들의 울퉁불퉁한 매력을 인정하신다면, 맛 좋은 과일들을 많이 접해보실 수 있을 겁니다! (민생회복 소비쿠폰 사용 가능합니다. 현장 결제 선택 후 매장에서 말씀해주세요!)",
+      "pay": [
+        {"id": 1, "name": "제로페이"},
+        {"id": 2, "name": "민생회복 소비쿠폰"}
+      ],
+      "entre": "이정현",
+      "num": "123-465-7894",
+      "origin": "사과(국내산) 샤인머스켓(국내산) 멜론(국내산,미국산) 포도(국내산) 참외(국내산) 단감(국내산)"
+    }
+  }
+]

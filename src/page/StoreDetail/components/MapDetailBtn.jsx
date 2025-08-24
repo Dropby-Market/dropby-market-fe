@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import MapDetailIcon from "@/assets/storeDetail/MapDetailIcon.svg?react";
 
-const MapCopyBtn = () => {
+const MapDetailBtn = () => {
 
 
     return (
@@ -14,4 +14,4 @@ const MapCopyBtn = () => {
     );
 };
 
-export default MapCopyBtn;
+export default MapDetailBtn;
