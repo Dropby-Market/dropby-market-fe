@@ -43,7 +43,7 @@ const StoreDetail = () => {
     }, [params.storeId]);
 
     if (!store) {
-      return <div>가게 정보를 불러오는 중입니다.</div>;
+      return <div>찾으시는 가게 정보가 없습니다.</div>;
     }
 
 
