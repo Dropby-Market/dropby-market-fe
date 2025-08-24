@@ -83,7 +83,7 @@ const StoreDetail = () => {
     <div className="min-h-screen mx-4">
       {/*상단 이미지 UI*/}
       <div className = "relative -mx-4">
-        <img src={Example} alt="예시이미지" className="w-full"/>
+        <img src={Example} alt="예시이미지" className="w-full h-60 object-cover object-center"/>
       </div>
 
       {/*가게 이름, 별점, 설명*/}
