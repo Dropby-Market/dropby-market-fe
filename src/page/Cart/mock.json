@@ -1,0 +1,19 @@
+{
+  "cartItems": [
+    {
+      "productName": "매콤 떡볶이 1인분",
+      "quantity": 1,
+      "price": 6000,
+      "storeName": "매콤떡볶이",
+      "marketName": "서울 종로시장"
+    },
+    {
+      "productName": "튀김 모둠",
+      "quantity": 2,
+      "price": 7000,
+      "storeName": "매콤떡볶이",
+      "marketName": "서울 종로시장"
+    }
+  ],
+  "totalCartPrice": 20000
+}

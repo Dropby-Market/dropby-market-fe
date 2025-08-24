@@ -1,0 +1,48 @@
+[
+  {
+    "orderId": 1,
+    "storeName": "매콤떡볶이",
+    "lng": 126.97834,
+    "lat": 37.56651,
+    "totalPrice": 13000,
+    "orderDate": "2025-08-06T12:35:00",
+    "status": "PICKED_UP",
+    "orderItems": [
+      {
+        "orderItemId": 1,
+        "productName": "매콤 떡볶이 1인분",
+        "quantity": 1,
+        "price": 6000
+      },
+      {
+        "orderItemId": 2,
+        "productName": "튀김 모둠",
+        "quantity": 1,
+        "price": 7000
+      }
+    ]
+  },
+  {
+    "orderId": 2,
+    "storeName": "빵굽는 아침",
+    "lng": 126.97856,
+    "lat": 37.56701,
+    "totalPrice": 11500,
+    "orderDate": "2025-08-06T13:55:00",
+    "status": "READY",
+    "orderItems": [
+      {
+        "orderItemId": 1,
+        "productName": "크루아상",
+        "quantity": 2,
+        "price": 4000
+      },
+      {
+        "orderItemId": 2,
+        "productName": "식빵",
+        "quantity": 1,
+        "price": 3500
+      }
+    ]
+  }
+]

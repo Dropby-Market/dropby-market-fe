@@ -1,5 +1,5 @@
 import Tag from '@/shared/ui/Tag.tsx';
-import TestImg from '@/assets/home/TestImg.png';
+import ExampleImage from "@/assets/storeDetail/Example.png"
 import StarIcon from '@/assets/ui/StarIcon.svg?react';
 import BookmarkIcon from '@/assets/ui/BookmarkIcon.svg?react';
 
@@ -9,7 +9,7 @@ export default function MarketStoreItem() {
     <li className="flex">
       <div className="h-[100px] w-[100px] shrink-0">
         <img
-          src={TestImg}
+          src={ExampleImage}
           alt={'가게 이미지'}
           className="h-full w-full rounded-lg object-cover object-center"
         />

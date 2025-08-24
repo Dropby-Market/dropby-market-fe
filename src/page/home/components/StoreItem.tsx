@@ -1,5 +1,5 @@
 import Tag from '@/shared/ui/Tag.tsx';
-import TestImg from '@/assets/home/TestImg.png';
+import ExampleImage from "@/assets/storeDetail/Example.png"
 import StarIcon from '@/assets/ui/StarIcon.svg?react';
 import BookmarkIcon from '@/assets/ui/BookmarkIcon.svg?react';
 import type { StoreDetail } from '@/page/Market/types.ts';
@@ -21,7 +21,7 @@ export default function StoreItem({ store }: StoreItemProps) {
     <li className="flex cursor-pointer" onClick={handleClick}>
       <div className="h-[100px] w-[100px] shrink-0">
         <img
-          src={TestImg}
+          src={ExampleImage}
           alt={'가게 이미지'}
           className="h-full w-full rounded-lg object-cover object-center"
         />
@@ -52,7 +52,6 @@ export default function StoreItem({ store }: StoreItemProps) {
           <span className="text-xs font-medium leading-4 text-gray-500">{store.openingHours}</span>
         </div>
       </div>
-      <BookmarkIcon className="shrink-0" />
     </li>
   );
 }

@@ -8,9 +8,9 @@ import { cn } from '@/shared/lib/utils.ts';
 
 const navItems = [
   { to: ROUTE_PATHS.ROOT, label: '홈', icon: <HomeIcon /> },
-  { to: ROUTE_PATHS.ORDER_HISTORY, label: '주문 내역', icon: <MapIcon /> },
-  { to: ROUTE_PATHS.PICKUP, label: '픽업 지도', icon: <OrderHistoryIcon /> },
-  { to: ROUTE_PATHS.MERCHANT, label: '상공인', icon: <MyIcon /> },
+  { to: ROUTE_PATHS.ORDER_HISTORY, label: '주문 내역', icon: <OrderHistoryIcon /> },
+  { to: ROUTE_PATHS.PICKUP, label: '픽업 지도', icon: <MapIcon /> },
+  { to: ROUTE_PATHS.MERCHANT, label: '마이', icon: <MyIcon /> },
 ];
 
 function BottomNavigation() {

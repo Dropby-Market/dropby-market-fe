@@ -1,10 +1,10 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_i_3314_3664)">
-<path d="M12 2.43677C16.0053 2.43677 19.25 5.6778 19.25 9.6731C19.25 11.6953 18.2802 13.8347 16.957 15.7922C15.6441 17.7347 14.0434 19.4105 12.9131 20.4885C12.391 20.9864 11.609 20.9864 11.0869 20.4885C9.95657 19.4105 8.35595 17.7347 7.04297 15.7922C5.7198 13.8347 4.75 11.6953 4.75 9.6731C4.75 5.6778 7.99472 2.43677 12 2.43677Z" stroke="#9CA3AF" stroke-width="1.5"/>
+<g filter="url(#filter0_i_3800_1572)">
+<path d="M11.9912 2.43677C15.9965 2.43677 19.2412 5.6778 19.2412 9.6731C19.2412 11.6953 18.2714 13.8347 16.9482 15.7922C15.6353 17.7347 14.0346 19.4105 12.9043 20.4885C12.3823 20.9864 11.6002 20.9864 11.0781 20.4885C9.94778 19.4105 8.34716 17.7347 7.03418 15.7922C5.71101 13.8347 4.74122 11.6953 4.74121 9.6731C4.74121 5.6778 7.98594 2.43677 11.9912 2.43677Z" stroke="currentColor" stroke-width="1.5"/>
 </g>
-<circle cx="12" cy="10" r="2.25" stroke="#9CA3AF" stroke-width="1.5"/>
+<circle cx="11.9912" cy="10" r="2.25" stroke="currentColor" stroke-width="1.5"/>
 <defs>
-<filter id="filter0_i_3314_3664" x="3.50298" y="1.18975" width="16.497" height="20.4222" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_i_3800_1572" x="3.49419" y="1.18975" width="16.497" height="20.4222" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -12,7 +12,7 @@
 <feGaussianBlur stdDeviation="0.434891"/>
 <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-<feBlend mode="normal" in2="shape" result="effect1_innerShadow_3314_3664"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_3800_1572"/>
 </filter>
 </defs>
 </svg>

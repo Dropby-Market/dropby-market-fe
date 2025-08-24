@@ -4,7 +4,7 @@ import Tabs from '@/shared/ui/Tabs.tsx';
 import Button from '@/shared/ui/Button.tsx';
 import MarketInformation from '@/page/Market/components/MarketInformation.tsx';
 import MarketStoreItem from '@/page/Market/components/MarketStoreItem.tsx';
-import TestImg from '@/assets/home/TestImg.png';
+import ExampleImage from "@/assets/storeDetail/Example.png"
 import StarIcon from '@/assets/ui/StarIcon.svg?react';
 import ArrowIcon from '@/assets/layout/ArrowIcon.svg?react';
 import MarketLocationIcon from '@/assets/ui/MarketLocationIcon.svg?react';
@@ -23,7 +23,7 @@ export default function MarketDetail({ market }: MarketDetailProps) {
           <li className="flex">
             <div className="h-[76px] w-[76px] shrink-0">
               <img
-                src={TestImg}
+                src={ExampleImage}
                 alt={'시장 이미지'}
                 className="h-full w-full rounded-lg object-cover object-center"
               />
@@ -51,7 +51,7 @@ export default function MarketDetail({ market }: MarketDetailProps) {
           <BottomSheet.Body>
             <div className="mb-5 h-[76px] w-full">
               <img
-                src={TestImg}
+                src={ExampleImage}
                 alt={'시장 이미지'}
                 className="h-full w-full rounded-lg object-cover object-center"
               />

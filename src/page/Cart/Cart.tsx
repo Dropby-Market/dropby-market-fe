@@ -5,34 +5,43 @@ import Button from '@/shared/ui/Button.tsx';
 import { useNavigate } from 'react-router-dom';
 import { ROUTE_PATHS } from '@/shared/constant/routes.ts';
 import { useEffect, useState } from 'react';
-import { httpMethod } from '@/shared/config/httpMethod.ts';
-import { END_POINT } from '@/shared/constant/apis.ts';
 import type { Cart } from '@/page/Cart/types.ts';
+import axios from 'axios';
 
 export default function Cart() {
   const navigate = useNavigate();
 
-  const [carts, setCarts] = useState([]);
+  const [carts, setCarts] = useState<Cart | undefined>();
 
   useEffect(() => {
     const fetchCarts = async () => {
       try {
-        const data = await httpMethod<Cart[]>(END_POINT.CARTS, 'GET');
+        const url = new URL('./mock.json', import.meta.url).href;
+        const { data } = await axios.get<Cart>(url);
+        console.log(data)
         setCarts(data);
-        console.log(data);
       } catch (error) {
-        console.error('장바구니 조회 실패', error);
+        console.error('마켓 조회 실패', error);
       }
     };
 
     fetchCarts();
   }, []);
 
+  if (!carts) {
+    return (
+      <div className="flex flex-1 flex-col bg-gray-100">
+        <div className="flex-1 flex items-center justify-center">
+          <div>로딩 중...</div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-1 flex-col bg-gray-100">
       <section className="pb-6.5 flex-1 space-y-2.5 p-4">
-        <CartItem />
-        <CartItem />
+        <CartItem cartItems={carts.cartItems} />
       </section>
 
       <div className="space-y-2.5 bg-white px-4 py-5 text-xs leading-4">
@@ -46,12 +55,12 @@ export default function Cart() {
         </div>
         <div className="flex justify-between">
           <div>상품 금액</div>
-          <div className="font-semibold">63,000원</div>
+          <div className="font-semibold">{carts.totalCartPrice}</div>
         </div>
         <Separator />
         <div className="flex justify-between">
           <div>총 결제 예정 금액</div>
-          <div className="text-lg font-semibold leading-7 text-red-500">63,000원</div>
+          <div className="text-lg font-semibold leading-7 text-red-500">{carts.totalCartPrice}</div>
         </div>
       </div>
 
@@ -62,7 +71,7 @@ export default function Cart() {
             navigate(`/${ROUTE_PATHS.PAYMENT}`);
           }}
         >
-          63,000원 주문하기
+          {carts.totalCartPrice} 주문하기
         </Button>
       </BottomButton>
     </div>

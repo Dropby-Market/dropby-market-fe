@@ -1,8 +1,7 @@
 import OrderItem from '@/page/OrderHistory/components/OrderItem.tsx';
 import { useEffect, useState } from 'react';
-import { httpMethod } from '@/shared/config/httpMethod.ts';
-import { END_POINT } from '@/shared/constant/apis.ts';
 import type { Order } from '@/page/OrderHistory/types.ts';
+import axios from 'axios';
 
 export default function OrderHistory() {
   const [history, setHistory] = useState([]);
@@ -10,7 +9,8 @@ export default function OrderHistory() {
   useEffect(() => {
     const fetchOrderHistory = async () => {
       try {
-        const data = await httpMethod<Order[]>(END_POINT.GET_ORDER_HISTORY, 'GET');
+        const url = new URL('./mock.json', import.meta.url).href;
+        const { data } = await axios.get<Order[]>(url);
         setHistory(data);
         console.log(data);
       } catch (error) {
@@ -24,8 +24,8 @@ export default function OrderHistory() {
   return (
     <div className="flex-1 bg-gray-100 p-4">
       <ul className="space-y-2.5">
-        {Array.from({ length: 10 }).map((_, idx) => (
-          <OrderItem key={idx} />
+        {history.map(orderHistory => (
+          <OrderItem key={orderHistory.orderId} orderHistory={orderHistory} />
         ))}
       </ul>
     </div>

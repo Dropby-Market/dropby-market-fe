@@ -44,7 +44,7 @@ export default function Header() {
             <ArrowIcon className="text-gray-400" />
           </Link>
         ) : (
-          <h1 className="text-base font-semibold leading-6">잠시 보류</h1>
+          <h1 className="text-base font-semibold leading-6">{config.title}</h1>
         ))}
 
       <div className="flex">
