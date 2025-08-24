@@ -1,0 +1,371 @@
+[
+    {   
+        "storeId": 1,
+        "review": {
+        "count": 6,
+        "post" : [
+        {
+          "id": 1,
+          "name": "떡볶이매니아",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.07.12",
+          "description": "양도 많고 맛있어요!"
+        },
+        {
+          "id": 2,
+          "name": "hot_chili",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.01",
+          "description": "조금 매웠지만 만족합니다."
+        },
+        {
+          "id": 3,
+          "name": "분식러버",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.07.21",
+          "description": "조금 짜긴 했지만 전체적으로 괜찮았어요."
+        },
+{
+          "id": 4,
+          "name": "로제홀릭",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.07.31",
+          "description": "정말 매콤하고 맛있었어요! 다음에도 또 올거예요."
+        },
+        {
+          "id": 5,
+          "name": "튀김킹",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.23",
+          "description": "치즈가 듬뿍 들어있어서 만족스러웠습니다."
+        },
+        {
+          "id": 6,
+          "name": "kimbap_lover22",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.07.31",
+          "description": "튁김이 바삭하고 떡볶이랑 같이 먹으니 최고!"
+        }
+      ]
+    }
+    },
+    {   
+        "storeId": 2,
+        "review": {
+        "count": 5,
+        "post" : [
+        {
+          "id": 1,
+          "name": "강아지발톱",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "가성비 최고! 양도 많고 맛도 좋아요."
+        },
+        {
+          "id": 2,
+          "name": "으아악",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.24",
+          "description": "야식으로 먹었는데 딱이었어요."
+        },
+        {
+          "id": 3,
+          "name": "우왕",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.01",
+          "description": "치즈김밥 강력 추천합니다!"
+        },
+        {
+          "id": 4,
+          "name": "배고파요",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.07.20",
+          "description": "맛은 괜찮지만 조금 늦게 나왔어요."
+        },
+        {
+          "id": 5,
+          "name": "정현이",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.04",
+          "description": "항상 믿고 먹는 김밥천국."
+        }
+      ]
+    }
+    },
+    {   
+        "storeId": 3,
+              "review": {
+        "count": 2,
+        "post" : [
+        {
+          "id": 1,
+          "name": "바다코끼리",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "세트 구성이 좋아서 다양하게 즐길 수 있어요."
+        },
+        {
+          "id": 2,
+          "name": "수염난 발가락",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "사장님 친절하시고 맛도 훌륭합니다."
+        }
+      ]
+    }
+    },
+    {   
+        "storeId": 4,
+        "review": {
+        "count": 3,
+        "post" : [
+        {
+          "id": 1,
+          "name": "냠냠",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "튀김이 기름지지 않고 바삭해서 만족! 특히 새우튀김은 살이 꽉 차있어서 최고였어요."
+        },
+        {
+          "id": 2,
+          "name": "하쿠지",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.08.23",
+          "description": "고구마튀김은 달콤하고 맛있었는데, 양이 조금 아쉬웠어요."
+        },
+        {
+          "id": 3,
+          "name": "눈알스티커",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.07.21",
+          "description": "튀김우동 국물이 시원하고 튀김이 불지 않아 너무 좋았습니다."
+        }
+      ]
+    }
+    },
+    {   
+        "storeId": 5,
+        "review": {
+        "count": 1,
+        "post" : [
+        {
+          "id": 1,
+          "name": "00ghj",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "굿."
+        }
+      ]
+    }
+    },
+    {   
+        "storeId": 6,
+        "review": {
+        "count": 2,
+        "post" : [
+        {
+          "id": 1,
+          "name": "아침형인간",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.05",
+          "description": "아침에 갓 구운 크루아상은 정말 최고네요. 버터향이 가득해서 행복해졌습니다."
+        },
+        {
+          "id": 2,
+          "name": "빵빵",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.01",
+          "description": "바게트가 쫄깃하고 고소해여. 근데 껍질이 조금 딱딱한 편이라 치아가 약한 분은 주의하셔여."
+        }
+      ]
+    }
+  },
+
+    {   
+        "storeId": 7,
+        "review": {
+        "count": 1234,
+        "post" : [
+        {
+          "id": 1,
+          "name": "러브버그",
+          "profile": "Example",
+          "star": 4,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.24",
+          "description": "새로 생겼나봐요. 생크림케이크가 부드럽고 달지 않아 만족스러웠습니다. 특별한 날에 딱이에요!"
+        }
+      ]
+    }
+    },
+    {   
+        "storeId": 8,
+        "review": {
+        "count": 2,
+        "post" : [
+        {
+          "id": 1,
+          "name": "많이배고픈",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.12",
+          "description": "앙버터가 너무 맛있어요. 단팥이 달지 않고 버터가 진해서 밸런스가 딱 좋았습니다."
+        },
+        {
+          "id": 2,
+          "name": "식빵좋아",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.07.19",
+          "description": "밤식빵이 촉촉하고 고소했어요. 양이 조금만 더 많았으면 최고일 듯!"
+        }
+      ]
+    }
+    },
+    {   
+        "storeId": 9,
+        "review": {
+        "count": 6,
+        "post" : [
+        {
+          "id": 1,
+          "name": "먹고 또 먹고",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "딸기케이크가 너무 상큼하고 부드러워요. 생일케이크로 완전 추천합니다."
+        },
+        {
+          "id": 2,
+          "name": "행복찾기",
+          "profile": "",
+          "star": 3,
+          "image": "",
+          "date": "2025.08.18",
+          "description": "휘낭시에가 촉촉하고 고소해서 계속 손이 가네요."
+        },
+        {
+          "id": 3,
+          "name": "디저트중독",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.19",
+          "description": "치즈케이크의 치즈 풍미가 진하고 부드럽습니다. 입안에서 사르르 녹아요."
+        },
+        {
+          "id": 4,
+          "name": "바다사자",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.20",
+          "description": "크림빵이 달콤하고 부드러워요. 조금 더 크면 좋겠지만 맛은 최고입니다."
+        },
+        {
+          "id": 5,
+          "name": "아메리카우는토끼",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.22",
+          "description": "마카롱 세트가 색감도 예쁘고 맛도 훌륭해요. 친구 선물용으로도 좋아요."
+        },
+        {
+          "id": 6,
+          "name": "금빛원숭이",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.24",
+          "description": "바닐라라떼가 부드럽고 달콤해서 빵과 함께 먹기 딱 좋았습니다."
+        }
+      ]
+    }
+    },
+    {   
+        "storeId": 10,
+        "review": {
+        "count": 4,
+        "post" : [
+        {
+          "id": 1,
+          "name": "파이썬",
+          "profile": "Example",
+          "star": 5,
+          "image": ["Example", "Example", "Example","Example","Example"],
+          "date": "2025.08.06",
+          "description": "호두파이가 고소하고 달콤해요. 식감이 정말 좋아서 또 사먹고 싶네요."
+        },
+        {
+          "id": 2,
+          "name": "시계는아침부터",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "마늘바게트가 달콤짭짤해서 술안주로도 딱입니다."
+        },
+        {
+          "id": 2,
+          "name": "통아저씨",
+          "profile": "",
+          "star": 4,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "통밀식빵이 고소하고 씹는 맛이 좋아요. 건강한 맛이 느껴져서 매일 먹고 싶습니다."
+        },
+        {
+          "id": 2,
+          "name": "파랑이와노랑이",
+          "profile": "",
+          "star": 5,
+          "image": "",
+          "date": "2025.08.06",
+          "description": "블루베리머핀이 촉촉하고 새콤달콤해서 커피랑 잘 어울려요."
+        }
+      ]
+    }
+    }
+]

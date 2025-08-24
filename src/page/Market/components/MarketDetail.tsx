@@ -8,9 +8,14 @@ import TestImg from '@/assets/home/TestImg.png';
 import StarIcon from '@/assets/ui/StarIcon.svg?react';
 import ArrowIcon from '@/assets/layout/ArrowIcon.svg?react';
 import MarketLocationIcon from '@/assets/ui/MarketLocationIcon.svg?react';
+import type { Market } from '@/page/Market/types.ts';
 
-// api 명세 확인 후 props 설정
-export default function MarketDetail() {
+interface MarketDetailProps {
+  market: Market;
+}
+
+export default function MarketDetail({ market }: MarketDetailProps) {
+
   return (
     <>
       <BottomSheet.Root>
@@ -25,7 +30,7 @@ export default function MarketDetail() {
             </div>
 
             <div className="mx-3 flex-1 space-y-1.5 overflow-hidden">
-              <h5 className="truncate text-base font-semibold leading-6">천안옛날</h5>
+              <h5 className="truncate text-base font-semibold leading-6">{market.name}</h5>
 
               <div className="flex items-center text-xs font-medium leading-4">
                 <StarIcon />
@@ -76,7 +81,7 @@ export default function MarketDetail() {
                   <StarIcon />
                   <span className="text-gray-500">4.2</span>
                   <span className="text-gray-400">(48)</span>
-                  <span className="text-gray-500">· 전화 010-1234-4567</span>
+                  <span className="text-gray-500">· 전화 {market.phoneNumber}</span>
                 </div>
 
                 <div className="flex items-center text-xs font-medium leading-4 text-gray-500">

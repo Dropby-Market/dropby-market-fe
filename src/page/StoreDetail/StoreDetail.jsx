@@ -22,31 +22,62 @@ const StoreDetail = () => {
     const params = useParams();
     const [activeTab, setActiveTab] = useState("메뉴");
 
-    const [allStores, setAllStores] = useState([]);
-    const [store, setStore] = useState(null);
 
-    useEffect(() => {
-      const fetchStores = async () => {
-        try {
-          const url = new URL("./mock.json", import.meta.url).href;
-          const { data } = await axios.get(url);
-          setAllStores(data);
+  const [items, setItems] = useState([]);
+  const [review, setReview] = useState([]);
+  const [store, setStore] = useState(null);
 
-          const selectedStore = data.find(s => s.storeId === Number(params.storeId));
-          setStore(selectedStore || null);
-        } catch (error) {
-          console.error("가게 조회 실패", error);
-        }
-      };
+  useEffect(() => {
+    const fetchStores = async () => {
+      try {
+        const url = new URL("./mock/store.json", import.meta.url).href;
+        const { data } = await axios.get(url);
 
-      fetchStores();
-    }, [params.storeId]);
+        const selectedStore = data.find((s) => s.storeId === Number(params.storeId)
+        );
+        setStore(selectedStore || null);
+      } catch (error) {
+        console.error("가게 조회 실패", error);
+      }
+    };
+    fetchStores();
+  }, [params.storeId]);
 
-    if (!store) {
-      return <div>찾으시는 가게 정보가 없습니다.</div>;
+  useEffect(() => {
+  const fetchItems = async () => {
+    try {
+      const url = new URL("./mock/items.json", import.meta.url).href;
+      const { data } = await axios.get(url);
+
+      const storeItems = data.find((i) => i.storeId === Number(params.storeId)
+      );
+      setItems(storeItems ? storeItems.items : []);
+    } catch (error) {
+      console.error("아이템 조회 실패", error);
     }
+  };
+    fetchItems();
+  }, [params.storeId]);
 
+  useEffect(() => {
+  const fetchReview = async () => {
+    try {
+      const url = new URL("./mock/review.json", import.meta.url).href;
+      const { data } = await axios.get(url);
 
+      const storeReview = data.find((r) => r.storeId === Number(params.storeId)
+      );
+      setReview(storeReview ? storeReview.review.post : []);
+    } catch (error) {
+      console.error("리뷰 조회 실패", error);
+    }
+  };
+    fetchReview();
+  }, [params.storeId]);
+
+  if (!store) {
+    return <div>찾으시는 가게 정보가 없습니다.</div>;
+  }
 
   return (
     <div className="min-h-screen mx-4">
@@ -71,7 +102,7 @@ const StoreDetail = () => {
         <div className="flex items-center gap-1 py-2 text-sm leading-5 font-medium">
           <StarIcon className="w-4"/>
           <span className="text-[#374151]">{store.rating}</span>
-          <span className="text-[#6B7280]">({store.reviewCount})</span>
+          <span className="text-[#6B7280]">({review.length})</span>
         </div>
 
         <p className="text-xs leading-4 font-medium text-[#6B7280]">{store.description}</p>
@@ -150,7 +181,7 @@ const StoreDetail = () => {
       <main>
         {/* 메뉴탭 */}
         {activeTab === "메뉴" && <>
-        {store.items?.map((item)=>(
+        {items.map((item)=>(
           <StoreItem key={item.id}
           name={item.name}
           price={item.price}
@@ -163,10 +194,10 @@ const StoreDetail = () => {
         {activeTab === "리뷰" && <>
         <div className="flex items-center gap-1 pt-5 pb-6">
           <h2 className="text-[#1F2937] text-lg leading-7 font-semibold">리뷰</h2>
-          <p className="text-[#6B7280] text-lg leading-7 font-semibold">{store.review.count.toLocaleString()}개</p>
+          <p className="text-[#6B7280] text-lg leading-7 font-semibold">{review.length.toLocaleString()}개</p>
         </div>
         
-        {store.review.post.map((post) => (
+        {review.map((post) => (
           <StoreReview
           key={post.id}
           name={post.name}
